@@ -1,0 +1,26 @@
+# Build outputs
+out/
+work/
+*.iso
+
+# Archiso temp files
+airootfs/root/.bash_history
+
+# Node stuff (for CLI/UI later)
+node_modules/
+dist/
+build/
+
+# Python stuff (if used)
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Env files (important later)
+.env
