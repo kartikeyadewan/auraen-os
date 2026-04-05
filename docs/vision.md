@@ -1,9 +1,9 @@
-# Auren OS Vision
+# Auraen OS Vision
 
-Auren OS is a next-generation developer operating system designed to eliminate setup time and maximize productivity.
+Auraen OS is a next-generation developer operating system designed to eliminate setup time and maximize productivity.
 
 ## Core Idea
-Auren OS provides a ready-to-use environment for developers, hackers, and builders with everything pre-configured out of the box.
+Auraen OS provides a ready-to-use environment for developers, hackers, and builders with everything pre-configured out of the box.
 
 ## Key Features
 

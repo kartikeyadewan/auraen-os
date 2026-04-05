@@ -1,4 +1,4 @@
-# Auren OS Architecture
+# Auraen OS Architecture
 
 ## Base System
 - Arch Linux
