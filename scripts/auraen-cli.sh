@@ -1,4 +1,6 @@
 #!/bin/bash
+LOGFILE="$HOME/auraen.log"
+exec > >(tee -a "$LOGFILE") 2>&1
 
 case "$1" in
   install)

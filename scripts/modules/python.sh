@@ -1,5 +1,6 @@
 #!/bin/bash
-
+LOGFILE="$HOME/auraen.log"
+exec > >(tee -a "$LOGFILE") 2>&1
 echo "🐍 Installing Python / AI Stack..."
 
 packages=(

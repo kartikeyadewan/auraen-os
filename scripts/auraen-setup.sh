@@ -1,4 +1,12 @@
 #!/bin/bash
+LOGFILE="$HOME/auraen.log"
+exec > >(tee -a "$LOGFILE") 2>&1
+FLAG="$HOME/.auraen_setup_done"
+
+if [ -f "$FLAG" ]; then
+  exit 0
+fi
+#!/bin/bash
 echo " Auraen OS — Developer First Experience"
 echo " Fast. Minimal. Ready."
 echo ""
@@ -56,3 +64,4 @@ echo " Your system is ready."
 echo " Start coding immediately."
 echo " Run: code ."
 echo ""
+touch "$FLAG"
