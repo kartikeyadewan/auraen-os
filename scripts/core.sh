@@ -1,3 +1,5 @@
+echo "🌐 Refreshing mirrors..."
+sudo pacman -Syy
 echo "￼ Installing VS Code..."
 
 if ! command -v code &> /dev/null; then
