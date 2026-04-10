@@ -1,5 +1,9 @@
 #!/bin/bash
-
+echo " Auraen OS — Developer First Experience"
+echo " Fast. Minimal. Ready."
+echo ""
+echo "⏳ Preparing your environment..."
+sleep 1
 echo "🚀 Welcome to Auraen Setup"
 
 # Run core setup first
@@ -47,3 +51,8 @@ case $choice in
 esac
 
 echo "🎉 Auraen setup complete!"
+echo ""
+echo " Your system is ready."
+echo " Start coding immediately."
+echo " Run: code ."
+echo ""
