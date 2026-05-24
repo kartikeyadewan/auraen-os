@@ -1,20 +1,14 @@
 #!/bin/bash
 LOGFILE="$HOME/auraen.log"
 exec > >(tee -a "$LOGFILE") 2>&1
-echo "🌐 Refreshing mirrors..."
+
 sudo pacman -Syy
-echo "￼ Installing VS Code..."
 
 if ! command -v code &> /dev/null; then
-  sudo pacman -S --noconfirm code || echo "￼ Failed to install VS Code"
-else
-  echo "￼ VS Code already installed"
+  sudo pacman -S --noconfirm code || echo "Failed to install VS Code"
 fi
-echo "🧩 Installing VS Code extensions..."
 
-code --install-extension ms-python.python || echo "❌ Failed Python extension"
-code --install-extension esbenp.prettier-vscode || echo "❌ Failed Prettier"
-code --install-extension dbaeumer.vscode-eslint || echo "❌ Failed ESLint"
-code --install-extension ms-vscode.cpptools || echo "❌ Failed C/C++ tools"
-
-echo "✅ VS Code setup complete!"
+code --install-extension ms-python.python 2>/dev/null || true
+code --install-extension esbenp.prettier-vscode 2>/dev/null || true
+code --install-extension dbaeumer.vscode-eslint 2>/dev/null || true
+code --install-extension ms-vscode.cpptools 2>/dev/null || true

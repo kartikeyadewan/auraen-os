@@ -1,7 +1,6 @@
 #!/bin/bash
 LOGFILE="$HOME/auraen.log"
 exec > >(tee -a "$LOGFILE") 2>&1
-echo "⚙️ Installing C/C++ Stack..."
 
 packages=(
   gcc
@@ -12,11 +11,8 @@ packages=(
 
 for pkg in "${packages[@]}"; do
   if pacman -Qi "$pkg" &> /dev/null; then
-    echo "✅ $pkg already installed"
+    echo "$pkg already installed"
   else
-    echo "⬇️ Installing $pkg..."
-    sudo pacman -S --noconfirm "$pkg" || echo "❌ Failed to install $pkg"
+    sudo pacman -S --noconfirm "$pkg" || echo "Failed to install $pkg"
   fi
 done
-
-echo "🎉 C/C++ stack installed!"
